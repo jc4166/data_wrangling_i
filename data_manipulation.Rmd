@@ -22,3 +22,20 @@ pups_data = janitor::clean_names(pups_data)
 ```
 
 ## Selecting!!!
+```{r}
+select(litters_data, group, litter_number, gd0_weight)
+
+select(litters_data, -group)
+```
+
+## Filtering
+```{r}
+filter(litters_data, group == "Mod8")
+```
+
+## Mutate
+
+## Arrange
+```{r}
+arrange(litters_data, pups_born_alive, gd0_weight)
+```
